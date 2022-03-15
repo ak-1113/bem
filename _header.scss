@@ -1,0 +1,82 @@
+.header {
+    padding-top: 20px;
+    border-bottom: 1px solid $cOffWhite;
+  }
+  
+  .header__inner {
+    max-width: 1230px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .header-utilities {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  
+  .header-utilities__logo {
+    width: 150px;
+  }
+  
+  .header-utilities__btn {
+    width: auto;
+    padding: 10px 20px;
+    box-shadow: none;
+  }
+  // 追加コード
+  .header-utilities__btn__color{
+      background-color:$cNavy;
+      color: $cWhite;
+  }
+   // 追加コード
+  .header-utilities__btn__color:focus,
+  .header-utilities__btn__color:hover{
+      border: 2px solid $cNavy;
+      background-color: $cWhite;
+      color:$cNavy;
+      transition: .3s;
+  }
+  .header-nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .header-nav__item {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .header-nav__item:last-child .header-nav__link::after {
+    content: none;
+  }
+  
+  .header-nav__link {
+    position: relative;
+    display: block;
+    padding: 15px 5px;
+    border-bottom: 4px solid transparent;
+    color: $cBlack;
+    text-decoration: none;
+    transition: .25s;
+  }
+  
+  .header-nav__link:focus,
+  .header-nav__link:hover {
+    border-bottom-color: $cNavy;
+  }
+  
+  .header-nav__link::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 1px;
+    height: 20px;
+    background-color: $cOffWhite;
+    transform: translateY(-50%);
+  }
+  

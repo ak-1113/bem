@@ -1,0 +1,12 @@
+.btn{
+    display: inline-block;
+    width: 300px;
+    max-width: 100%;
+    padding: 20px 10px;
+    border: 2px solid transparent;
+    // 追加コード
+    text-decoration: none;
+    // 追加コード
+    transition: .3s;
+}
+

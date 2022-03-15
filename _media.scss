@@ -1,0 +1,59 @@
+.half-media{
+    display: flex;
+    align-items: center;
+}
+.half-media__img-wrapper{
+    // 画面縮小用
+    flex:0 1 48.333%;
+    // 画像とテキストの余白となる40pxをメイン幅の1200pxで割ったもの。
+    // 左右を%で指定すれば、画面縮小のときに余白が縮んで崩れにくくなる！
+    margin-right: 3.333%;
+}
+.half-media__img{
+    width: 100%;
+}
+.half-media__body{
+    flex:1;
+}
+// 最後の要素の余白をリセット
+.half-media__body > *:last-child{
+    // タイトルはあるけど説明文がないみたいなときにずれないため
+    margin-bottom: 0;
+}
+.half-media__title{
+    margin-bottom: 10px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.half-media-reverse{
+    flex-direction: row-reverse;
+}
+.half-media-reverse .half-media__img-wrapper{
+    margin-right: 0;
+}
+.half-media-reverse .media__body{
+    margin-right: 3.333%;
+    text-align: right;
+}
+
+.half-media__button{
+    
+    width: auto;
+    padding: 10px 20px;
+    box-shadow: none;
+}
+
+  // 追加コード
+.half-media__button__color{
+    background-color:$cNavy;
+    color: $cWhite;
+}
+ // 追加コード
+.half-media__button__color:focus,
+.half-media__button__color:hover{
+    border: 2px solid $cNavy;
+    background-color: $cWhite;
+    color:$cNavy;
+    transition: .3s;
+}

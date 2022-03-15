@@ -1,0 +1,39 @@
+.level1-heading{
+    padding:30px 10px;
+    // background-color: lightblue;
+    // ↑いいの、、？今回は色使わないけど、他の場所で何色かでるパターンのときはmodifier?
+    color:$cBlack;
+    font-size: 1.75rem;
+    text-align: center;
+}
+.level1-heading__inner{
+    position: relative;
+    display: inline-block;
+    transform: translateY(-20%);
+}
+.level1-heading__inner::after{
+    content:"";
+    position: absolute;
+    bottom:-10px;
+    left:50%;
+    width: 80px;
+    background-color:$cBlack;
+    transform: translateX(-50%);
+    height: 2px;
+}
+
+.level2-heading{
+    padding-bottom: 10px;
+    border-bottom:4px solid $cNavy;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.level3-heading{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: $cNavy;
+    color:$cWhite;
+    font-size: 1.75rem;
+    // font-weight: bold;
+}
